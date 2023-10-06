@@ -22,23 +22,69 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/Cardview"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="600dp"
         android:layout_marginTop="50dp"
         android:elevation="20dp"
         app:cardCornerRadius="20dp"
         android:padding="20dp"
         app:layout_constraintTop_toTopOf="@id/Textview">
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <ImageView
                 android:id="@+id/Alarmimage"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="350dp"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:text="Create Alarm  Time\nby pressing buttons,Alarm can be  created and cancelled.\nCheck Current time by looking below real digital clock"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Alarmimage"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/materialButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Create Alarm"
+                app:icon="@drawable/baseline_add_alarm_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Cancel Alarm"
+                android:textColor="@color/blue"
+                android:background="#00FFFFFF"
+                app:icon="@drawable/baseline_alarm_off_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/materialButton">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <ImageView
+                android:id="@+id/Heartimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="116dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
             </ImageView>
 
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </com.google.android.material.card.MaterialCardView>
