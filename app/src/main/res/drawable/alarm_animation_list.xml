@@ -41,6 +41,4 @@
         android:drawable="@drawable/alarm10"
         android:duration="200">
     </item>
-
-
 </animation-list>

@@ -33,11 +33,4 @@
     android:drawable="@drawable/uvpce_logo_7"
     android:duration="200">
 </item>
-
-
-
-
-
-
-
 </animation-list>
